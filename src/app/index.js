@@ -9,7 +9,7 @@ angular.module('oneBeautifulColour', ['ui.router'])
   .controller('MainGuideCtrl', MainGuideCtrl)
   .controller('NavbarCtrl', NavbarCtrl)
 
-  .config(function ($stateProvider, $urlRouterProvider) {
+  .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
       .state('home', {
         url: '/',
@@ -21,6 +21,8 @@ angular.module('oneBeautifulColour', ['ui.router'])
         templateUrl: 'app/main-guide/main-guide.html',
         controller: 'MainGuideCtrl'
       });
+
+    $locationProvider.html5Mode(true);
 
     $urlRouterProvider.otherwise('/');
   })

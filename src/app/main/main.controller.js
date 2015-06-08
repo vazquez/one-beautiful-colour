@@ -2,6 +2,7 @@
 
 class MainCtrl {
   constructor ($scope) {
+    console.log('Hello from MainCtrl');
     $scope.awesomeThings = [
       {
         'title': 'AngularJS',
