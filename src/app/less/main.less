@@ -6,34 +6,51 @@ body {
   font-size: 62.5%;
 }
 
-section {
+.container {
   display: flex;
   justify-content: center;
   align-elements: center;
-  width: 100%;
-  height: 100%;
-  margin: 35rem 0;
+  flex-direction: column;
+  // width: 100%;
+  // height: 100%;
+  // margin: 35rem 0;
 }
 
-article {
-  background: white;
-  padding: 0.4rem 0.4rem 2rem 0.4rem;
-  border-radius: 0.2rem;
-  box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
-  color: #333;
-  font-size: 1.6rem;
-  p{
+section {
+  margin: 15rem auto;
+  article {
+    background: white;
+    padding: 0.4rem 0.4rem 2rem 0.4rem;
+    border-radius: 0.2rem;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+    color: #333;
     font-size: 1.6rem;
-    line-height: 2.2rem;
-    margin: 0 0 0 0.6rem;
-    font-weight: 500;
-    color: #454545;
+    .color {
+      width: 25rem;
+      height: 27rem;
+      margin: 0 0 1.4rem 0;
+      background-color: #7d76d5;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      margin: 0 0 0 0.6rem;
+      font-weight: 500;
+      color: #454545;
+    }
   }
 }
 
-.color {
-  width: 25rem;
-  height: 27rem;
-  margin: 0 0 1.4rem 0;
-  background-color: #7d76d5;
+footer {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.4rem;
+  color: #666;
+  a {
+    color: inherit;
+    &:active, &:focus, &:hover {
+      color: inherit;
+    }
+  }
 }
+
